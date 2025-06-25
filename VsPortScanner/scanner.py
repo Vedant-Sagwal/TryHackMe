@@ -9,7 +9,7 @@ def scan(ports, target) :
             result = sock.connect_ex((target, port))
             if result == 0:
                 print(f"(+) port {port} is open")
-        except (ex):
+        except exception as ex:
             print(f"(-) error in scanning {port} port")
         finally:
             sock.close()
