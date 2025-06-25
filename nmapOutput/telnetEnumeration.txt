@@ -1,0 +1,46 @@
+# Nmap 7.95 scan initiated Mon Jun 16 12:45:58 2025 as: nmap -A -vv -p2000-10000 -oN nmapOutput/telnetEnumeration.txt 10.10.71.100
+Increasing send delay for 10.10.71.100 from 5 to 10 due to 11 out of 27 dropped probes since last increase.
+Nmap scan report for 10.10.71.100
+Host is up, received conn-refused (0.19s latency).
+Scanned at 2025-06-16 12:45:58 IST for 361s
+Not shown: 8000 closed tcp ports (conn-refused)
+PORT     STATE SERVICE REASON  VERSION
+8012/tcp open  unknown syn-ack
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, NULL, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
+|_    SKIDY'S BACKDOOR. Type .HELP to view commands
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8012-TCP:V=7.95%I=7%D=6/16%Time=684FC579%P=aarch64-unknown-linux-gn
+SF:u%r(NULL,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20c
+SF:ommands\n")%r(GenericLines,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\
+SF:x20to\x20view\x20commands\n")%r(GetRequest,2E,"SKIDY'S\x20BACKDOOR\.\x2
+SF:0Type\x20\.HELP\x20to\x20view\x20commands\n")%r(HTTPOptions,2E,"SKIDY'S
+SF:\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20commands\n")%r(RTSPRe
+SF:quest,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20comm
+SF:ands\n")%r(RPCCheck,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x
+SF:20view\x20commands\n")%r(DNSVersionBindReqTCP,2E,"SKIDY'S\x20BACKDOOR\.
+SF:\x20Type\x20\.HELP\x20to\x20view\x20commands\n")%r(DNSStatusRequestTCP,
+SF:2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20commands\n
+SF:")%r(Help,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20
+SF:commands\n")%r(SSLSessionReq,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HEL
+SF:P\x20to\x20view\x20commands\n")%r(TerminalServerCookie,2E,"SKIDY'S\x20B
+SF:ACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20commands\n")%r(TLSSessionR
+SF:eq,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20command
+SF:s\n")%r(Kerberos,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20v
+SF:iew\x20commands\n")%r(SMBProgNeg,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\
+SF:.HELP\x20to\x20view\x20commands\n")%r(X11Probe,2E,"SKIDY'S\x20BACKDOOR\
+SF:.\x20Type\x20\.HELP\x20to\x20view\x20commands\n")%r(FourOhFourRequest,2
+SF:E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20commands\n"
+SF:)%r(LPDString,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view
+SF:\x20commands\n")%r(LDAPSearchReq,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\
+SF:.HELP\x20to\x20view\x20commands\n")%r(LDAPBindReq,2E,"SKIDY'S\x20BACKDO
+SF:OR\.\x20Type\x20\.HELP\x20to\x20view\x20commands\n")%r(SIPOptions,2E,"S
+SF:KIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x20commands\n")%r(
+SF:LANDesk-RC,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\x20view\x2
+SF:0commands\n")%r(TerminalServer,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.H
+SF:ELP\x20to\x20view\x20commands\n")%r(NCP,2E,"SKIDY'S\x20BACKDOOR\.\x20Ty
+SF:pe\x20\.HELP\x20to\x20view\x20commands\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 16 12:51:59 2025 -- 1 IP address (1 host up) scanned in 361.71 seconds

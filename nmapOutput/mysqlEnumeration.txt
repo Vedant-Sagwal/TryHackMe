@@ -1,0 +1,57 @@
+# Nmap 7.95 scan initiated Tue Jun 24 12:27:00 2025 as: nmap -A -p1-10000 -vv -oN nmapOutput/mysqlEnumeration.txt 10.10.57.200
+Nmap scan report for 10.10.57.200
+Host is up, received conn-refused (0.18s latency).
+Scanned at 2025-06-24 12:27:00 IST for 258s
+Not shown: 9998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 b3:2f:88:0e:6f:0d:e9:50:59:82:3d:b9:de:f4:1d:50 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBDRyCw2CcoY7/Hco2uwd7MJVtF8rQ7TsbXxr1CkjHvV8lvi1tujYnCS6Hqkuti5POPS//oknoFaZUeV7e4V02saOKRo9tVJXoLyx8at4rV2b85zn1YfzvvFzoN2nzqi+fQoyZ2eN+/BW53p6kk7sc2mY8QTsta8V+DVS4QNDgmwwMkkGqhN60bAFh8wsa5W1DDs/zjjljkHkQD9sY2ePEhkscp92TtTQ2Zvlf9la2BZer5p1wlwKXNMq71Nk3H+u0jHLc0+yDHIqB7k5D44al+32YEUPnQS092E7Qilc0dhsqlcDd24f1cIwSpMx+YmUaizyYpT4u7A9aojulX1yIx7zut84xbli6k2rdsDmDD+mn8RftNXTweVm9ylZ6VcKdW7JgCsMeSbojq2HFlGoNEZGuCm09QrDJUOhYKU5dyt+L0tBEOM2fgkYbqDbUjUmZkl60joKUwfShkpPqGY9JKvQQl3aKOFBIjRt2t1gfd1DeytZQbEPNME0ph5tIuqM=
+|   256 c0:d8:cb:41:b9:b3:74:db:39:24:9f:09:4f:2d:5a:d1 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDT/OMeleUS9JAPhMsC9ylQufSNU50SBRHSF5+b6FOABJxotTbVRlcQJ+4EI5ZIK1c/EWudR6YHbclhVBKcs3ys=
+|   256 95:b4:d0:8b:88:b6:a6:14:63:50:ce:70:e2:76:02:b5 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAslkrgY9Egk4RBygeZ4OqrF0sKtnXrf9o3gtt64GfF8
+3306/tcp open  mysql   syn-ack MySQL 8.0.42-0ubuntu0.20.04.1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.42-0ubuntu0.20.04.1
+|   Thread ID: 10
+|   Capabilities flags: 65535
+|   Some Capabilities: LongColumnFlag, Support41Auth, SupportsTransactions, Speaks41ProtocolOld, FoundRows, LongPassword, IgnoreSigpipes, ConnectWithDatabase, SupportsCompression, SwitchToSSLAfterHandshake, InteractiveClient, SupportsLoadDataLocal, DontAllowDatabaseTableColumn, IgnoreSpaceBeforeParenthesis, Speaks41ProtocolNew, ODBCClient, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: 'a\F\x10&+==M1\x13!\x06\x1E\wT\x16`
+|_  Auth Plugin Name: caching_sha2_password
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.29_Auto_Generated_Server_Certificate
+| Issuer: commonName=MySQL_Server_5.7.29_Auto_Generated_CA_Certificate
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-04-23T10:13:27
+| Not valid after:  2030-04-21T10:13:27
+| MD5:   14e6:6c5f:93ac:342e:43da:5a92:48d1:df0c
+| SHA-1: 1250:60a1:35a8:b899:0da7:f0eb:fa6d:50b9:b3cb:77a7
+| -----BEGIN CERTIFICATE-----
+| MIIDBzCCAe+gAwIBAgIBAjANBgkqhkiG9w0BAQsFADA8MTowOAYDVQQDDDFNeVNR
+| TF9TZXJ2ZXJfNS43LjI5X0F1dG9fR2VuZXJhdGVkX0NBX0NlcnRpZmljYXRlMB4X
+| DTIwMDQyMzEwMTMyN1oXDTMwMDQyMTEwMTMyN1owQDE+MDwGA1UEAww1TXlTUUxf
+| U2VydmVyXzUuNy4yOV9BdXRvX0dlbmVyYXRlZF9TZXJ2ZXJfQ2VydGlmaWNhdGUw
+| ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDE1jVm401gVggEGGV6+tvS
+| GAp4yoeKEVOFuNPhxpIBVRMASmGahnPxOw5jrQnZkTohBG0QYwZK2a66hFRSEKwu
+| DaJLMbFmdK+/7IxxTbm7mqDOPbWRR4C1WXTl26o6HSADqqMJvGlnWxyLoehixBDw
+| 91OukKEBbCig2n54fp4zrRBjbeCRxa3OPKbO/wpOtpg7GM7chWspDr3vqfIH8tY1
+| ldQ1dUgLaDNFIgIUvWDDPU9WVZro6fzHhrKkpdm40ra2UXLVO6NtGoWXlAjzK4J3
+| rDUn95OaI2A74pwNhL0dyd62X6XYIEIwh6dNsDrhUeM34aLdAfAM2a9+PYFexKjT
+| AgMBAAGjEDAOMAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBACFlFTXG
+| s67m/pgvMB26+aVSAURjXN+Neb0pxKZ6Rk0vDk0igRENCvccF9SIrZzIwTI8+kU1
+| VV+e5WebNUENm+IS+AJphwyOoHHnBUYcGF/dSfqMhHRNQkRDMI2YpiDCtXssEieH
+| K3ZA3xbEo7owQpM6QEQwxlgLt1R8FNh2xe63tTtnRFPwi0V+HG6fv4Ko0Jl2ghan
+| e4FPTDbIYPUPbM0C/eyUyVUCKN5xgSvbFqBuO/Ovm53uF2cu3GaMqeJVTDmJfkk+
+| 8MBPVmfZwEl/gIJymG17ydTNH0hBlw8dM4ZSvjmKvKZI7ZUd0HPqNS3njQjG0G8s
+| wsdeP5hVa8afyBo=
+|_-----END CERTIFICATE-----
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jun 24 12:31:18 2025 -- 1 IP address (1 host up) scanned in 258.90 seconds

@@ -1,0 +1,4 @@
+target ip : "10.10.12.239"
+open ports : 22, 80
+got password for molly : "sunshine"
+done and dusted

@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Mon Jun 16 12:22:38 2025 as: nmap -sS -vv -p- -oN nmapOutput/telnetEnumeration1.txt 10.10.71.100
+Nmap scan report for 10.10.71.100
+Host is up, received reset ttl 60 (0.19s latency).
+Scanned at 2025-06-16 12:22:38 IST for 962s
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE REASON
+8012/tcp open  unknown syn-ack ttl 60
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Jun 16 12:38:41 2025 -- 1 IP address (1 host up) scanned in 963.00 seconds

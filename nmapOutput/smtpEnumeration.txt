@@ -1,0 +1,50 @@
+# Nmap 7.95 scan initiated Mon Jun 23 12:49:29 2025 as: nmap -A -p1-2000 -oN ./nmapOutput/smtpEnumeration.txt -vv 10.10.158.9
+Nmap scan report for 10.10.158.9
+Host is up, received conn-refused (0.18s latency).
+Scanned at 2025-06-23 12:49:29 IST for 45s
+Not shown: 1998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 77:cf:f0:6d:59:13:43:05:2c:57:ac:1a:1b:55:1c:cb (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCl2CvCPJKEa71pWJ75iQvQlKHPSnJDNro3mx40MdCgO+VZYAheO1PBH/XhIw1aNQc0EUMg2wYZjcvyosEvnjoq9HL43LTjOh2pC2ZiKJro+2a2PHVAAr92c3xMp5C1A+rvt9aJlbAhAZREyxtEgLEiMYgLfFnSrnsTeE1h5gk7FxTLM/pZKsyRWCoq4QTqPTUyLvQ1GDehtK28+yhZK6n9zNfz6roYycmO4YvHkBnvLWfaqn6CyKKXu9GnwkFOtZDYSbIlFIZf9mToPvoHW6Hqi5fnx/3bww2syi+37mdXvbfQNugy52tBNquqkJpRGhHevW8UOMcGinGIoNUH7l55U0CLV0xzVWyDGtd7JkZCWC3lXaANesu25dPwhbaYn4O1lkAax0sjnlcRmTdnj6iQ8VOeQ40PdhLqZXSUCeUAr7oOUvCoKMXWuNHVU2gGNJLM441cjxBjn+0dxX/9X98jTNpiHOsXo3LER/SNrxM0WrF2bxGpp2bml+4fNtaYNsk=
+|   256 95:9d:77:4a:1b:ad:2d:0c:75:84:fe:e9:8b:a5:9c:0e (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNnsPR20qa7toa5PTNgU4zkEK5FzmAI39Z6yXivcSQmowL0EviZRoNrzffTMMPV3xQ4uWjbVHv+LHYivb1Ig5N8=
+|   256 28:2e:d9:f5:d1:61:ec:71:d3:4b:54:c8:f8:7b:e4:b3 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKxn4X5tfgL2HSbhwet/MEsdr7b4U/5N9p8vgmsGSOok
+25/tcp open  smtp    syn-ack Postfix smtpd
+| ssl-cert: Subject: commonName=polosmtp
+| Subject Alternative Name: DNS:polosmtp
+| Issuer: commonName=polosmtp
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-04-22T18:38:06
+| Not valid after:  2030-04-20T18:38:06
+| MD5:   5c21:92bb:0da5:82d6:7b45:a851:7651:7137
+| SHA-1: eb6c:0d88:57e6:8ba7:8308:aac8:9c34:0836:d2a1:c133
+| -----BEGIN CERTIFICATE-----
+| MIIC1jCCAb6gAwIBAgIUZ0vVVd2ClfM+TsEBsGtkaQcOg7kwDQYJKoZIhvcNAQEL
+| BQAwEzERMA8GA1UEAwwIcG9sb3NtdHAwHhcNMjAwNDIyMTgzODA2WhcNMzAwNDIw
+| MTgzODA2WjATMREwDwYDVQQDDAhwb2xvc210cDCCASIwDQYJKoZIhvcNAQEBBQAD
+| ggEPADCCAQoCggEBALh2Ab5smNG1TfJHozg7ZJMEXw6S6PoGd30P5i+ZiwUq4Qkl
+| 8bYFeKl3UQ29sosA+CeCoP5aNXrF5k0J+nzWkI/DuJO0u4Yk6TxdgtJVEfb8A520
+| dgg+ED5sO7JAMMaGRNVzzXR7r/DaqdgivHuCcSvH7Pl1C3apqa0M5rmEWkfrgmKE
+| 5A3jjLFkjzvJId07kdk2SMFfCYG6nHVVLNzkN1v/plJcDE99rKn18YDI2OI6Mlj4
+| ukENJvu0ekmQo6s4Pr2xILNLpCyebtiVl08Rv88HHo+RMNqQyiO3g2myJeGbwfPD
+| NuwJ8fZbjve8yvAbUMkIInXROXCtke1ffRLFOicCAwEAAaMiMCAwCQYDVR0TBAIw
+| ADATBgNVHREEDDAKgghwb2xvc210cDANBgkqhkiG9w0BAQsFAAOCAQEARg/+u5PH
+| FUSf7mWS+4XPA7krdhIo2gPT8XMME0bQlLP0DR2udWDc+QxTXb2CalLRV7+R+VVc
+| DfJ2tGSNz4myiy3XdT2G0EofxCojoddU+qoJw5KbLdvKAcZL21dtECy4Jl/7j6jU
+| O9/Lc8Whwq5otQNV77xQ+MrTOfl+BGrRD6WOJNga12RqeD5GZtzD1Aij3zvhKlXQ
+| fbXIj6DRDIaTlBGEECd6nPPaAoCSAPD2XEyAh0k+Qi8wFTNaOIMtDJnvWDKm12Jb
+| 8C8tpEMO2Th3NA1Z7XPnnYOuCtbJ9ISpOe/a72+ERdIdeFLqARURCq3fbKIIuE37
+| fujfT9EtIKryLg==
+|_-----END CERTIFICATE-----
+|_smtp-commands: polosmtp.home, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING
+|_ssl-date: TLS randomness does not represent time
+Service Info: Host:  polosmtp.home; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 23 12:50:14 2025 -- 1 IP address (1 host up) scanned in 45.18 seconds

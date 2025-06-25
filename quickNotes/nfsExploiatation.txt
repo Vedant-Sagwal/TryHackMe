@@ -1,0 +1,9 @@
+target ip : "10.10.175.166"
+open ports : 22, 111, 2049(nfs), 4232(firewall),10884(firewall), 16709(firewall), 21544(firewall), 23424(firewall), 36989, 41005(firewall), 46573, 48569, 51989, 60797(firewall)
+share name for nfs share :"/home"
+gained ssh access also
+now exploiting root sqaushing misconfiguration
+
+
+planted a root executing bash to nfs sever and ssh to server and ran the b ash and it ran with root acess because of lacking rot sqaushing
+root sqaushing restricts granting root access to normal user and gives them the lowest level privilege
