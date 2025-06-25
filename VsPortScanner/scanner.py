@@ -1,4 +1,6 @@
 import socket
+from scapy.all import IP,TCP,sr1
+import sys
 
 def scan(ports, target):
     try:
