@@ -3,9 +3,9 @@ import socket
 def scan(ports, target):
     try:
         ip = socket.gethostbyname(target)
-        print(f"[i] Resolved {target} to {ip}")
+        print(f"[i] Resolved {target} to {ip}!!! YEAHHH")
     except socket.gaierror:
-        print("[-] Invalid hostname.")
+        print("[-] Invalid hostname you cheater.")
         return
 
     print(f"[*] Scanning ports on {ip}...\n")
@@ -16,14 +16,14 @@ def scan(ports, target):
             try:
                 result = sock.connect_ex((ip, port))
                 if result == 0:
-                    print(f"[+] Port {port} is OPEN")
+                    print(f"[+] Port {port} is OPEN, Lets Go!!")
             except Exception as ex:
-                print(f"[-] Error scanning port {port}: {ex}")
+                print(f"[-] Error scanning port {port}: {ex}, Oh NoOO")
 
 if __name__ == "__main__":
     target = input("Enter IP or hostname: ").strip()
     if not target:
-        print("[-] No target entered. Exiting.")
+        print("[-] Nothing Entered. Ok Bye!!")
         exit()
 
     ports = range(1, 5000)
